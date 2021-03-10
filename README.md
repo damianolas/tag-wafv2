@@ -3,7 +3,8 @@ AWS WAF non può essere taggato da console AWS, quindi è necessario un passaggi
 
 # Procedura
 Facciamo un list della webACL per ottenere l'arn (caso WAF associato a CloudFront):
-``` aws wafv2 list-web-acls --scope=CLOUDFRONT --region=us-east-1 --profile XXX 
+``` 
+aws wafv2 list-web-acls --scope=CLOUDFRONT --region=us-east-1 --profile XXX 
 ```
 
 Eseguiamo il comando:
