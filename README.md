@@ -20,4 +20,5 @@ Check:
     --region=us-east-1 \
     --profile XXX 
 ```
-  
+
+Doc: https://docs.aws.amazon.com/cli/latest/reference/wafv2/index.html#cli-aws-wafv2
