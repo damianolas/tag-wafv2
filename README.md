@@ -10,8 +10,13 @@ Eseguiamo il comando:
     --resource-arn <ARN> \
     --tags Key=<KEY>,Value=<VALUE> \
     --region=us-east-1 \
-    --profile XXX ```
+    --profile XXX 
+```
 
 Check:
-``` aws wafv2 list-tags-for-resource --resource-arn arn:aws:wafv2:us-east-1:302968333199:global/webacl/fincantieri-si/29672c65-75d3-4131-bbcc-3ba6a9a5c2e1 --region=us-east-1 --profile fincantieri ```
+``` aws wafv2 list-tags-for-resource \
+    --resource-arn <ARN> \
+    --region=us-east-1 \
+    --profile XXX 
+```
   
