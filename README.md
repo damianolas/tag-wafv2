@@ -4,11 +4,12 @@ AWS WAF non può essere taggato da console AWS, quindi è necessario un passaggi
 # Procedura
 Facciamo un list della webACL per ottenere l'arn (caso WAF associato a CloudFront):
 ``` 
-aws wafv2 list-web-acls --scope=CLOUDFRONT --region=us-east-1 --profile XXX 
+aws wafv2 list-web-acls --scope=CLOUDFRONT (REGIONAL per gli ALB) --region=us-east-1 --profile XXX
 ```
 
 Eseguiamo il comando:
-``` aws wafv2 tag-resource \
+``` 
+aws wafv2 tag-resource \
     --resource-arn <ARN> \
     --tags Key=<KEY>,Value=<VALUE> \
     --region=us-east-1 \
@@ -16,7 +17,8 @@ Eseguiamo il comando:
 ```
 
 Check:
-``` aws wafv2 list-tags-for-resource \
+``` 
+aws wafv2 list-tags-for-resource \
     --resource-arn <ARN> \
     --region=us-east-1 \
     --profile XXX 
